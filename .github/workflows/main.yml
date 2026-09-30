@@ -21,7 +21,7 @@ jobs:
         run: |
           rm -rf extracted
           mkdir extracted
-          unzip -q LandRent_3Gleiche_NEUSTART_FIX3.zip -d extracted
+          unzip -q LandRent_3Gleiche_NEUSTART_FIX3_BOT.zip -d extracted
           PROJECT_DIR=$(find extracted -name settings.gradle.kts -print -quit | xargs dirname)
           echo "PROJECT_DIR=$PROJECT_DIR" >> "$GITHUB_ENV"
 
